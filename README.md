@@ -42,7 +42,12 @@ If you're feeling up to it, refactor the course RESTapi to make a request to you
 Prevent requests without valid authentication headers.
 > !!NOTE if you choose to submit this, make sure to add the token to the postman collection and export the postman collection file to your submission so we can review!
 
+### my elastic beanstalk endpoint
+
+http://image-filter-project-dev222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://images.pexels.com/photos/9509207/pexels-photo-9509207.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+
 ### Custom Domain Name
 
 Add your own domain name and have it point to the running services (try adding a subdomain name to point to the processing server)
 > !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
+run build command "build": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && zip -r Archive.zip . && cd ..",
